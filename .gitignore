@@ -17,6 +17,13 @@ expo-env.d.ts
 *.p12
 *.key
 *.mobileprovision
+*.keystore
+*.apk
+*.aab
+*.ipa
+google-services.json
+GoogleService-Info.plist
+credentials.json
 
 # Metro
 .metro-health-check*
@@ -30,8 +37,10 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
-.env*.local
+# local env files (keep .env.example)
+.env
+.env.*
+!.env.example
 
 # typescript
 *.tsbuildinfo

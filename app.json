@@ -9,7 +9,13 @@
     "backgroundColor": "#0f110f",
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.zat.app"
+      "bundleIdentifier": "com.zat.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "يحتاج التطبيق إلى الكاميرا لالتقاط الصور ورفعها في الموقع.",
+        "NSPhotoLibraryUsageDescription": "يحتاج التطبيق إلى مكتبة الصور لاختيار الصور ورفعها في الموقع.",
+        "NSMicrophoneUsageDescription": "يحتاج التطبيق إلى الميكروفون لتسجيل مقاطع الفيديو ورفعها في الموقع.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.zat.app",
@@ -19,13 +25,16 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "softwareKeyboardLayoutMode": "resize"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-status-bar"
-    ]
+      "expo-status-bar",
+      "expo-dev-client"
+    ],
+    "scheme": "zatapp"
   }
 }
